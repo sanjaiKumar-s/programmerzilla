@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #131515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: inline-block;
+  color: #e21612;
+  font-size: 2.3rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navbar__list {
+  font-size: 1.7rem;
+  display: flex;
+  gap: 3rem;
+  margin: 0rem;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.navbar__item {
+  list-style: none;
+}
+
+.navbar__item > a {
+  color: #ddd;
+  transition: all 0.2s;
+}
+
+.navbar__item > a:hover {
+  color: #fff;
+}
