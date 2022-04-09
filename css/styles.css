@@ -3,6 +3,9 @@ html {
 }
 
 :root {
+  --color-black: #212529;
+  --color-white: #f1f3f5;
+  --color-black-lite: #343a40;
   --color-primary: #c92a2a;
   --color-primary-lite: #e03131;
 }
@@ -12,97 +15,62 @@ body {
   color: #333;
   font-size: 2rem;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 90%;
-  padding: 5rem;
-  margin: 0 auto;
-}
-
 .navbar {
-  background-color: #131515;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem 0 2rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
-
-.navbar__logo {
-  display: inline-block;
-  color: var(--color-primary);
-  font-size: 2.3rem;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.navbar__list {
-  font-size: 1.7rem;
-  font-weight: 500;
+.nav__links {
   display: flex;
-  gap: 3rem;
-  margin: 0rem;
-  padding: 0 2rem;
-  align-items: center;
+  gap: 5rem;
+  padding: 0;
 }
-
-.navbar__item {
+.navbar__logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.nav__links > li {
   list-style: none;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
-
-.navbar__item > a {
-  color: #ddd;
-  transition: all 0.2s;
-}
-
-.navbar__item > a:hover {
-  color: #fff;
-}
+/* .nav__container {
+} */
 
 /*  */
-
-.about {
-  font-weight: 500;
-  background-color: #131515;
-  color: #eee;
+.hero {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 5rem;
+  display: flex;
+  height: 650px;
+  align-items: center;
+  justify-content: center;
 }
 
-.about__img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  border: 4px solid #ddd;
+.hero__bold {
+  font-size: 9rem;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
-.about__intro {
-  display: block;
+.hero__text {
+  text-align: center;
+  max-width: 130rem;
 }
 
-.about__para {
-  margin: 0.8rem 0 2.8rem 0;
-}
-
-.about__btn{
-
-}
-
-/* BUTTON */
-.btn {
-  border: none;
-  padding: 0.9rem 3rem;
-  border-radius: 10rem;
-  font-size: 1.8rem;
-  color: #eee;
-  transition: background 0.2s;
-}
-
-.btn--red {
-  background-color: var(--color-primary);
-}
-
-.btn--red:hover {
-  background-color: var(--color-primary-lite);
+.hero__para {
+  margin: 0;
 }
