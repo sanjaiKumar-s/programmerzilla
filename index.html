@@ -4,52 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="C50KvCPHGpXqHmYA9mbRBuTStQlCGx6hU3xV-GimRnY"
-    />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="script.js"></script>
-
-    <title>Programmerzilla</title>
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <!-- <section class="navbar-container">
-      <nav class="nav">
-        <span class="nav__logo">Programmerzilla</span>
-        <ul class="nav__links">
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-        </ul>
-      </nav>
-    </section> -->
-
-    <section>
-      <div class="navbar">
-        <span class="navbar__logo">Programmerzilla.me</span>
-        <nav class="nav__container">
+    <!-- <header class="section-navbar">
+      <div class="header">
+        <span class="logo">Programmerzilla</span>
+        <ion-icon class="menu__icon" name="menu-outline"></ion-icon>
+        <nav class="nav-list">
           <ul class="nav__links">
-            <li>About</li>
-            <li>contact</li>
-            <!-- <li>Home</li> -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
+    </header> -->
+
+    <nav class="navbar-container collapsible">
+      <div class="navbar">
+        <a class="logo link" href="/">Programmerzilla</a>
+        <ion-icon class="menu__icon" name="menu-outline"></ion-icon>
+      </div>
+
+      <ul class="nav__links collapsible__content">
+        <li class="nav-item list">
+          <a href="#" class="link">Home</a>
+        </li>
+        <li class="nav-item list">
+          <a href="#" class="link">About</a>
+        </li>
+        <li class="nav-item list">
+          <a href="#" class="link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="section-greet">
+      <div class="greet-container">
+        <h1 class="greet__title">vanakam</h1>
+        <span class="greet__translation">"Hello"</span>
+      </div>
     </section>
 
-    <div class="hero">
-      <div class="hero__text">
-        <span class="hero__bold">Vanakkam</span>
-        <!-- <p class="hero__para">Which means hello</p> -->
+    <section class="section-hero">
+      <div class="hero container">
+        <div class="hero__txt">
+          <span>Hey Iam Sanjai</span>
+          <p>
+            A passionate Maker and coder who love building weird stuffs. A
+            Computer Science Engineering student from Malabar Institute of
+            Technology, Kannur. Currently resides in kerala, Where you'll find
+            me attending local techevents, hackathones, and meetups🥂 My
+            research lies in area like Machine Learning and Becoming a
+            Full-stack Developer⚡️
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

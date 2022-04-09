@@ -1,0 +1,172 @@
+:root {
+  --color-primary: #212529;
+  --color-primary-lite: #f8f9fa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  color: var(--color-primary);
+  padding: 0;
+  margin: 0;
+}
+
+/* *******************/
+/* REUSABLES */
+/* *******************/
+
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* *******************/
+/* NAVBAR */
+/* *******************/
+
+.navbar-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.menu__icon {
+  font-size: 2.5rem;
+}
+
+.nav__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item > a {
+  font-size: 1.6rem;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .menu__icon {
+    display: none;
+  }
+
+  .nav__links {
+    width: auto;
+    flex-direction: row;
+  }
+
+  /* .nav-item {
+  } */
+}
+
+/* *******************/
+/* GREET */
+/* *******************/
+
+.section-greet {
+  height: 100vh;
+  padding: 2rem;
+  color: var(--color-primary-lite);
+  background-color: var(--color-primary);
+  position: relative;
+}
+
+.greet-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.greet__title {
+  font-size: 11rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.greet__translation {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .greet__title {
+    font-size: 5rem;
+  }
+  .greet__translation {
+    font-size: 2rem;
+  }
+}
+
+/* *******************/
+/* HERO */
+/* *******************/
+
+.section-hero {
+  margin: 3rem 0 9rem 0;
+}
+
+.hero__txt p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+}
+
+.hero__txt span {
+  letter-spacing: 0.5px;
+  font-size: 2rem;
+  font-weight: 600;
+}
